@@ -1,0 +1,20 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/node_modules": true,
+    "**/*-lock.json": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "prettier.prettierPath": "../node_modules/prettier",
+  "explorer.fileNesting.patterns": {
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .mailmap, .git-blame*",
+    "*.js": "$(capture).js.map, $(capture).min.js, $(capture).d.ts",
+    ".env": "*.env, .env*, env.d.ts",
+    "dockerfile": ".dockerignore, dockerfile*",
+    "package.json": ".env*, README.md, .gitignore*,"
+  }
+}
